@@ -1,0 +1,61 @@
+h1
+{
+    color: aqua;
+}
+#projets
+{
+    background-color: cadetblue;
+    padding: 2.5px;
+}
+#liste-projets
+{
+    display:block;
+    align-items: center;
+    background-color: azure;
+    width: 100%;
+}
+#liste-projets a
+{
+    display:block;
+    align-content: center;background-color: bisque;
+    border-radius: 2px;
+    padding: 2px;
+    opacity: 75%;
+    text-decoration: none;
+    transition: bold 2s;
+}
+#liste-projets a:hover
+{
+    opacity: 95%;
+    border-width: 3px;
+    font-weight: bold;
+    border: solid aqua;
+    transition: bold 1s;
+}
+.p-link
+{
+    display: inline-block;
+    width: auto;
+    border-color: chocolate;
+    border-width: 0.5px;
+}
+#hr-top
+{
+    height: 15px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.projet
+{
+    position: relative;
+    height: 150px;
+    width: 100%;
+    margin-top: 15px;
+    background-color: brown;
+}
+.gotop
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
