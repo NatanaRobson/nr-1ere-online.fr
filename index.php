@@ -11,6 +11,7 @@
     <nav id="navigation">
         <div id="projets">
             <ul id="liste-projets">
+                <li id="lien-cv" class="p-link"><a href="./cv.php">CV</a></li>
                 <li id="p1-link" class="p-link"><a href="#projet1">Projet 1</a></li>
                 <li id="p2-link" class="p-link"><a href="#projet2">Projet 2</a></li>
                 <li id="p3-link" class="p-link"><a href="#projet3">Projet 3</a></li>
@@ -33,5 +34,3 @@
             <a href="#projets">Haut de page</a>
         </div>
     </div>
-</body>
-</html>

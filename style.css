@@ -59,3 +59,41 @@ h1
     bottom: 0;
     right: 0;
 }
+.header
+{
+    width: 100%;
+}
+.img-header
+{
+    height: 75px;
+    width: 100%;
+    opacity: 0.2;
+    border: solid 2px red;
+}
+.id
+{
+    display: flex;
+    justify-content: space-around;
+}
+.identifiants
+{
+    height: auto;
+    width: 150px;
+    border: solid 2px teal;
+    padding: 0 0 0 0;
+}
+.photo
+{
+    position: relative;
+}
+.photo-id
+{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.coordonnees
+{
+    display: flex;
+    flex-direction: column;
+}
