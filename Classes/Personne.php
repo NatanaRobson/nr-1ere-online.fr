@@ -4,14 +4,15 @@ class Personne
     // attributs
     private string $nom;
     private string $prenom;
-    private array $details;
+    private array $details = [];
+    static public $ls_personnel = [];
 
     // constructeur
-    function __construct($n, $p)
+    function __construct($n, $p, $d = [])
     {
         $this->nom = $n;
         $this->prenom = $p;
-        $this->details = [];
+        $this->details = $d;
     }
 
     // fonctions
@@ -25,6 +26,11 @@ class Personne
             function get_prenom()
             {
                 return $this->prenom;
+            }
+            // *retourne le nom complet
+            function get_np()
+            {
+                return $this->get_nom().' '.$this->get_prenom();
             }
             // *retourne les details
             function get_details()
@@ -46,6 +52,20 @@ class Personne
             function set_details(string $k,string $v)
             {
                 $this->details += [$k => $v];
+            }
+            // *ajouter à liste personnel
+            public static function ajout_pers($pers)
+            {
+                if(is_array($pers))
+                {
+                    foreach($pers as $p)
+                    {
+                        if(!in_array($p,self::$ls_personnel))
+                        {
+                            self::$ls_personnel[] = $p;
+                        }
+                    }
+                }
             }
 }
 ?>

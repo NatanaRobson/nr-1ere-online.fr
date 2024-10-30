@@ -97,3 +97,8 @@ h1
     display: flex;
     flex-direction: column;
 }
+.inactif
+{
+    display: none;
+    color: red;
+}
